@@ -1,0 +1,308 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Blog - Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-size: 1rem;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #34495e;
+      overflow: hidden;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    li {
+      margin: 0 10px;
+    }
+
+    a {
+      display: block;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #3d566e;
+    }
+
+    .bg-image {
+      background-image: url('light-gray.png');
+      background-size: cover;
+      background-position: center;
+      padding: 50px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .read-more-btn {
+      background-color: #3d566e;
+      color: white;
+      border-radius: 25px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .read-more-btn:hover {
+      background-color: #ffffff3e;
+      color: #3d566e;
+    }
+
+    .latest-tech-news {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 40px 20px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #2c3e50;
+    }
+
+    .feedback-form {
+      margin: 40px 0;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+   
+    @media (max-width: 1200px) {
+      .nav-container {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .latest-tech-news {
+        font-size: 2rem;
+      }
+
+      .card img {
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+      }
+
+      li {
+        margin: 5px 0;
+      }
+
+      .bg-image {
+        padding: 30px 0;
+      }
+
+      .card img {
+        height: 200px;
+      }
+
+      .latest-tech-news {
+        font-size: 1.8rem;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .bg-image {
+        padding: 20px 0;
+      }
+
+      .latest-tech-news {
+        font-size: 1.5rem;
+      }
+
+      .feedback-form {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  
+  <section class="latest-tech-news">
+    <h1>Latest Technology News</h1>
+  </section>
+
+ 
+  <header>
+    <nav>
+      <div class="nav-container">
+        <a class="navbar-brand" href="#">
+          <img src="tch2.jpg" alt="Logo" class="logo">
+          Tech News
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  
+  <div class="bg-image">
+    <div class="container">
+      <div class="row">
+       
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="1.1.png" class="card-img-top" alt="Article Thumbnail" style="border-radius: 15px 15px 0 0; height: 300px;">
+            <div class="card-body">
+              <h5 class="card-title">Cybersecurity Threats in 2024</h5>
+              <p class="card-text">Discover the top cybersecurity threats businesses face today and how to protect sensitive information in an increasingly digital world.</p>
+              <a href="https://www.imperva.com/learn/application-security/cyber-security-threats/" class="btn read-more-btn" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="2.png" class="card-img-top" alt="Article Thumbnail" style="border-radius: 15px 15px 0 0; height: 300px;">
+            <div class="card-body">
+              <h5 class="card-title">Protecting Your Business from Attacks</h5>
+              <p class="card-text">Ransomware continues to be a major threat to businesses of all sizes. This article provides strategies for safeguarding your company against ransomware attacks.</p>
+              <a href="https://www.upguard.com/blog/best-practices-to-prevent-ransomware-attacks" class="btn read-more-btn" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="3.png" class="card-img-top" alt="Article Thumbnail" style="border-radius: 15px 15px 0 0; height: 300px;">
+            <div class="card-body">
+              <h5 class="card-title">How to Recognize and Avoid Scams</h5>
+              <p class="card-text">Phishing scams are becoming increasingly sophisticated. Discover how to identify phishing attempts and protect yourself and your organization from falling victim to these tactics.</p>
+              <a href="https://www.scamwatch.gov.au/stay-protected/help-to-spot-and-avoid-scams" class="btn read-more-btn" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="feedback-form">
+        <h2>Get Involved</h2>
+        <form id="userInputForm">
+          <div class="mb-3">
+            <label for="search" class="form-label">Search Articles</label>
+            <input type="text" class="form-control" id="search" placeholder="Search for articles...">
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label">Select News Category</label>
+            <select class="form-select" id="category">
+              <option selected>Choose a category...</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="software">Software</option>
+              <option value="gadgets">Gadgets</option>
+              <option value="trends">Tech Trends</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="feedback" class="form-label">Your Feedback</label>
+            <textarea class="form-control" id="feedback" rows="3" placeholder="Share your thoughts..."></textarea>
+          </div>
+          <button type="submit" class="btn read-more-btn">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <footer class="text-white py-3">
+    <div class="container text-center">
+      <p>© 2024 Tech News | Follow us on 
+        <a href="https://www.facebook.com/" class="text-white" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/" class="text-white" target="_blank"><i class="fab fa-twitter"></i></a> 
+        <a href="https://www.instagram.com/" class="text-white" target="_blank"><i class="fab fa-instagram"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('userInputForm').addEventListener('submit', function (event) {
+      event.preventDefault(); 
+
+      const searchQuery = document.getElementById('search').value;
+      const selectedCategory = document.getElementById('category').value;
+      const feedback = document.getElementById('feedback').value;
+
+      
+      alert(`Search Query: ${searchQuery}\nSelected Category: ${selectedCategory}\nFeedback: ${feedback}`);
+
+      
+      document.getElementById('userInputForm').reset();
+    });
+  </script>
+</body>
+
+</html>
+
+

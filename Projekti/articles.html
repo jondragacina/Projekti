@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Blog - Articles</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #34495e;
+      overflow: hidden;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    li {
+      margin: 0 10px;
+    }
+
+    a {
+      display: block;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #3d566e;
+    }
+
+    .read-more-btn {
+      background-color: #3d566e;
+      color: white;
+      border-radius: 25px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .read-more-btn:hover {
+      background-color: #ffffff3e;
+      color: #3d566e;
+    }
+
+    main h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+
+    .list-group-item {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    @media (max-width: 992px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+      }
+
+      li {
+        margin: 5px 0;
+      }
+
+      main h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      main h1 {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+      }
+
+      .list-group-item {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .nav-container {
+        padding: 0 20px;
+      }
+
+      .logo {
+        width: 30px;
+        height: 30px;
+      }
+
+      main h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <nav>
+      <div class="nav-container">
+        <a class="navbar-brand" href="#">
+          <img src="tch2.jpg" alt="Logo" class="logo">
+          Tech News Blog
+        </a>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  
+  <main class="container my-5">
+    <h1 class="text-center mb-5">All Articles</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-group">
+          <!-- Artikulli 1 -->
+          <li class="list-group-item mb-4">
+            <h5><strong>The Rise of Quantum Computing: Revolutionizing Technology</strong></h5>
+            <p><small>Published on: September 1, 2024</small></p>
+            <p>Excerpt: Quantum computing promises to redefine our understanding of computation...</p>
+            <a href="https://hbr.org/2021/07/quantum-computing-is-coming-what-can-it-do" class="btn read-more-btn" target="_blank">Read More</a>
+          </li>
+          <!-- Artikulli 2 -->
+          <li class="list-group-item mb-4">
+            <h5><strong>AI and the Future of Work: Opportunities and Threats</strong></h5>
+            <p><small>Published on: September 5, 2024</small></p>
+            <p>Excerpt: Artificial intelligence is reshaping industries and transforming the workforce...</p>
+            <a href="https://www.europarl.europa.eu/topics/en/article/20200918STO87404/artificial-intelligence-threats-and-opportunities" class="btn read-more-btn" target="_blank">Read More</a>
+          </li>
+          <!-- Artikulli 3 -->
+          <li class="list-group-item mb-4">
+            <h5><strong>Exploring the Metaverse: The New Digital Frontier</strong></h5>
+            <p><small>Published on: September 8, 2024</small></p>
+            <p>Excerpt: The metaverse is gaining traction as a virtual universe...</p>
+            <a href="https://medium.com/@sternalexander/navigating-the-metaverse-the-new-digital-frontier-d26dc4d123a1" class="btn read-more-btn" target="_blank">Read More</a>
+          </li>
+          <!-- Artikulli 4 -->
+          <li class="list-group-item mb-4">
+            <h5><strong>Blockchain Beyond Cryptocurrency: Innovations in Data Security</strong></h5>
+            <p><small>Published on: September 12, 2024</small></p>
+            <p>Excerpt: While blockchain is best known as the technology behind Bitcoin...</p>
+            <a href="https://www.fintechweekly.com/magazine/articles/enhancing-crypto-security-cutting-edge-solutions-and-innovations" class="btn read-more-btn" target="_blank">Read More</a>
+          </li>
+          <!-- Artikulli 5 -->
+          <li class="list-group-item mb-4">
+            <h5><strong>Green Technology: Paving the Way to a Sustainable Future</strong></h5>
+            <p><small>Published on: September 15, 2024</small></p>
+            <p>Excerpt: As the world grapples with climate change, green technology offers innovative solutions...</p>
+            <a href="https://medium.com/@illuminz/green-technology-development-paving-the-way-to-a-sustainable-future-d4e93b3b4a5e" class="btn read-more-btn" target="_blank">Read More</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  
+  <footer class="text-white py-3" style="background-color: #2c3e50;">
+    <div class="container text-center">
+      <p>© 2024 Tech News | Follow us on 
+        <a href="https://www.facebook.com/" class="text-white" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/" class="text-white" target="_blank"><i class="fab fa-twitter"></i></a> 
+        <a href="https://www.instagram.com/" class="text-white" target="_blank"><i class="fab fa-instagram"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
